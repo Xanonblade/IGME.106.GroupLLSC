@@ -1,4 +1,7 @@
-﻿namespace GroupVersionControl
+﻿
+//I am groot
+
+namespace GroupVersionControl
 {
     internal class Program
     {
