@@ -10,7 +10,10 @@ namespace GroupVersionControl
     {
         static void Main(string[] args)
         {
-<<<<<<< Updated upstream
+            // Test LongestSortedSequence
+            Console.WriteLine(LongestSortedSequence(new int[] { 3, 8, 10, 1, 9, 14, -3, 0, 14, 207, 56, 98 }));
+            Console.WriteLine(LongestSortedSequence(new int[] { 17, 42, 3, 5, 5, 5, 8, 2, 4, 6, 1, 19 }));
+
             string[] words = { "racecar", "happy birthday", "tacocat", "programming" };
             for (int i = 0; i < words.Length; i++)
             {
@@ -40,9 +43,6 @@ namespace GroupVersionControl
             }
 
             return reversed == sequence;
-=======
-            Console.WriteLine(LongestSortedSequence(new int[] { 3, 8, 10, 1, 9, 14, -3, 0, 14, 207, 56, 98 }));
-            Console.WriteLine(LongestSortedSequence(new int[] { 17, 42, 3, 5, 5, 5, 8, 2, 4, 6, 1, 19 }));
         }
 
         /// <summary>
@@ -75,7 +75,6 @@ namespace GroupVersionControl
             }
 
             return longestCount;
->>>>>>> Stashed changes
         }
     }
 }
