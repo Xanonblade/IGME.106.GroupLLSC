@@ -10,6 +10,7 @@ namespace GroupVersionControl
     {
         static void Main(string[] args)
         {
+<<<<<<< Updated upstream
             string[] words = { "racecar", "happy birthday", "tacocat", "programming" };
             for (int i = 0; i < words.Length; i++)
             {
@@ -39,6 +40,42 @@ namespace GroupVersionControl
             }
 
             return reversed == sequence;
+=======
+            Console.WriteLine(LongestSortedSequence(new int[] { 3, 8, 10, 1, 9, 14, -3, 0, 14, 207, 56, 98 }));
+            Console.WriteLine(LongestSortedSequence(new int[] { 17, 42, 3, 5, 5, 5, 8, 2, 4, 6, 1, 19 }));
+        }
+
+        /// <summary>
+        /// Finds the longest sequence of increasing numbers in an array.
+        /// </summary>
+        /// <param name="nums"></param>
+        /// <returns></returns>
+        private static int LongestSortedSequence(int[] nums)
+        {
+            if (nums.Length == 0)
+                return 0;
+
+            int count = 1;
+            int longestCount = 0;
+            for (int i = 1; i < nums.Length; i++)
+            {
+                // increase count
+                if (nums[i] > nums[i - 1])
+                {
+                    count++;
+                }
+                // increase longest count and reset count
+                else {
+                    if (count > longestCount)
+                    {
+                        longestCount = count;
+                    }
+                    count = 1;
+                }
+            }
+
+            return longestCount;
+>>>>>>> Stashed changes
         }
     }
 }
