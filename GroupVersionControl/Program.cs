@@ -1,4 +1,7 @@
-﻿namespace GroupVersionControl
+﻿
+// Corey Stinson
+
+namespace GroupVersionControl
 
 // Sly Cash
 
