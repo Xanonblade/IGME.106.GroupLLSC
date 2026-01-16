@@ -1,4 +1,7 @@
-﻿namespace GroupVersionControl
+﻿// Lucas Kishore
+// Lucas wrote this comment
+
+namespace GroupVersionControl
 {
     internal class Program
     {
