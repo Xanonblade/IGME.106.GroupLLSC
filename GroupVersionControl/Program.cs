@@ -159,14 +159,14 @@ namespace GroupVersionControl
                 else
                 {
                     // Check if current duplicate count is higher than highest duplicate count
-                    if (currentDuplicateCount > highestDuplicateCount)
+                    if (currentDuplicateCount >= highestDuplicateCount-1)
                     {
                         // Gives most recent duplicate
-                        // Code
+                        
 
                         // Update highest duplicate count
                         highestDuplicateCount = currentDuplicateCount + 1;
-                        duplicatedElement = arr[i - 1];
+                        duplicatedElement = arr[i];
                     }
                     // Reset current duplicate count
                     currentDuplicateCount = 0;
